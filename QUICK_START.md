@@ -6,7 +6,7 @@ The simplest way to connect QGroundControl, Mission Planner, or MAVProxy to your
 
 ```bash
 cd aircast-cli
-make build
+just build
 ```
 
 ## First Run
