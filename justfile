@@ -141,6 +141,7 @@ setup-dev:
 release TYPE:
     #!/usr/bin/env bash
     set -euo pipefail
+    git fetch --tags --quiet origin
     VERSION="{{version}}"
     NEW_VERSION_RAW="$(echo "$VERSION" | sed 's/^v//')"
     case "{{TYPE}}" in
