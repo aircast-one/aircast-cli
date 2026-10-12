@@ -14,7 +14,7 @@ import (
 
 // OAuth2Config holds OAuth2 configuration
 type OAuth2Config struct {
-	APIURL string // e.g., http://localhost:3333 or https://api.dev.aircast.one
+	APIURL string
 	Logger *log.Entry
 }
 

@@ -49,7 +49,7 @@ Authentication required...
 
 To authenticate aircast-cli, please visit:
 
-  https://dev.aircast.one/activate
+  https://app.aircast.one/activate
 
 And enter this code:
 
@@ -90,7 +90,7 @@ aircast-cli \
 ### Command Line Options
 
 - `--device <id>` - Device ID to connect to (required)
-- `--api <url>` - API base URL (default: https://api.dev.aircast.one)
+- `--api <url>` - API base URL (default: https://api.aircast.one)
 - `--tcp <address>` - TCP listen address (default: 127.0.0.1:14550)
 - `--udp <address>` - UDP listen address (optional)
 - `--login` - Force re-authentication (clear stored token)
@@ -116,7 +116,7 @@ aircast-cli --logout
 Authentication uses **OAuth2 Device Code Flow** (RFC 8628) - the same flow used by:
 ```bash
 # Login to get token
-curl -X POST https://api.dev.aircast.one/v1/auth/login \
+curl -X POST https://api.aircast.one/v1/auth/login \
   -H "Content-Type: application/json" \
   -d '{"email":"your@email.com","password":"yourpassword"}'
 
